@@ -24,11 +24,11 @@ const content = {
     metrics: [
       { value: "0.1", label: "första operativa noden i Accra" },
       { value: "02", label: "arbetsstationer under år ett" },
-      { value: "04", label: "framtida kustnoder under observation" },
+      { value: "04", label: "framtida perifera noder under observation" },
     ],
     atlas: {
       label: "Ekonomiskt observatorium",
-      title: "Accra först, kustnoder senare",
+      title: "Accra först, perifera noder senare",
       instruction: "Välj en nod för att se om den är ekonomisk motor eller framtida observationspunkt.",
       selectedLabel: "Vald nod",
       phaseLabel: "Fas",
@@ -126,7 +126,7 @@ const content = {
         {
           label: "Praktik",
           title: "Träning genom arbete",
-          text: "Utbildningen sker genom verkliga uppgifter, dokumenterade rutiner och stegvis högre kvalitet i leveranserna.",
+          text: "Utbildningen sker genom verkliga uppgifter, dokumenterade rutiner och stegvis mer avancerade uppdrag och stabil kvalitet i leveranserna.",
         },
         {
           label: "Kustnoder",
