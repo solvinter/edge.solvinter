@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Edge Solvinter",
-  description: "Lokala noder för svalka, data, laddning och stillhet.",
+  title: "Solvinter Edge Atlas",
+  description: "Accra Node 0.1 som ekonomisk startpunkt för Solvinter Edge.",
 };
 
 export default function RootLayout({ children }) {
