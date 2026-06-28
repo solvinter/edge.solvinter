@@ -2,32 +2,47 @@
 
 import { useState } from "react";
 
+const links = {
+  repo: "https://github.com/solvinter/edge.solvinter",
+  docs: "https://github.com/solvinter/edge.solvinter/tree/main/docs",
+  whitepaper:
+    "https://github.com/solvinter/edge.solvinter/blob/main/docs/finance/five-year-plan.md",
+  accra:
+    "https://github.com/solvinter/edge.solvinter/blob/main/docs/operations/accra-node-01-room.md",
+  budget:
+    "https://github.com/solvinter/edge.solvinter/blob/main/docs/finance/year-01-build-budget.md",
+  finance:
+    "https://github.com/solvinter/edge.solvinter/tree/main/docs/finance",
+  career:
+    "https://github.com/solvinter/edge.solvinter/blob/main/career/master.md",
+};
+
 const systems = {
   solvinter: {
     label: "SOLVINTER SYSTEM",
     nodes: [
-      { id: "accra", name: "Accra", status: "active", orbit: 1 },
-      { id: "mumford", name: "Mumford", status: "planned", orbit: 2 },
-      { id: "apam", name: "Apam", status: "planned", orbit: 3 },
-      { id: "winneba", name: "Winneba", status: "planned", orbit: 4 },
-      { id: "cape-coast", name: "Cape Coast", status: "planned", orbit: 5 },
+      { id: "accra", name: "Accra / Node 0.1", status: "active", orbit: 1, href: links.accra },
+      { id: "mumford", name: "Mumford", status: "planned", orbit: 2, href: links.docs },
+      { id: "apam", name: "Apam", status: "planned", orbit: 3, href: links.docs },
+      { id: "winneba", name: "Winneba", status: "planned", orbit: 4, href: links.docs },
+      { id: "cape-coast", name: "Cape Coast", status: "planned", orbit: 5, href: links.docs },
     ],
   },
   volta: {
     label: "VOLTA SECTOR",
     nodes: [
-      { id: "ho", name: "Ho", status: "possible", orbit: 1 },
-      { id: "hohoe", name: "Hohoe", status: "possible", orbit: 2 },
-      { id: "kpando", name: "Kpando", status: "possible", orbit: 3 },
-      { id: "keta", name: "Keta", status: "possible", orbit: 4 },
+      { id: "ho", name: "Ho", status: "possible", orbit: 1, href: links.docs },
+      { id: "hohoe", name: "Hohoe", status: "possible", orbit: 2, href: links.docs },
+      { id: "kpando", name: "Kpando", status: "possible", orbit: 3, href: links.docs },
+      { id: "keta", name: "Keta", status: "possible", orbit: 4, href: links.docs },
     ],
   },
   ashanti: {
     label: "ASHANTI NETWORK",
     nodes: [
-      { id: "kumasi", name: "Kumasi", status: "possible", orbit: 1 },
-      { id: "obuasi", name: "Obuasi", status: "possible", orbit: 2 },
-      { id: "sunyani", name: "Sunyani", status: "possible", orbit: 3 },
+      { id: "kumasi", name: "Kumasi", status: "possible", orbit: 1, href: links.docs },
+      { id: "obuasi", name: "Obuasi", status: "possible", orbit: 2, href: links.docs },
+      { id: "sunyani", name: "Sunyani", status: "possible", orbit: 3, href: links.docs },
     ],
   },
 };
@@ -48,15 +63,14 @@ export default function Page() {
         <button onClick={() => { setSystem("solvinter"); setSelected(null); }}>
           SOLVINTER
         </button>
-        <a href="https://github.com/solvinter/edge.solvinter/blob/main/docs/finance/five-year-plan.md">
-          whitepaper
-        </a>
-        <a href="https://github.com/solvinter/edge.solvinter">
-          docs
-        </a>
+
+        <a href={links.whitepaper} target="_blank" rel="noreferrer">whitepaper</a>
+        <a href={links.repo} target="_blank" rel="noreferrer">docs</a>
+
         <button onClick={() => { setSystem("solvinter"); setSelected(null); }}>
           atlas
         </button>
+
         <button onClick={() => { setSystem("volta"); setSelected(null); }}>
           stars
         </button>
@@ -96,9 +110,13 @@ export default function Page() {
           <button onClick={() => setSelected(null)}>close</button>
           <p>{selected.status}</p>
           <h2>{selected.name}</h2>
-          <a href="https://github.com/solvinter/edge.solvinter/tree/main/docs">
-            open documentation
-          </a>
+          <a href={selected.href} target="_blank" rel="noreferrer">open node file</a>
+          {selected.id === "accra" && (
+            <>
+              <a href={links.budget} target="_blank" rel="noreferrer">build budget</a>
+              <a href={links.finance} target="_blank" rel="noreferrer">finance docs</a>
+            </>
+          )}
         </aside>
       )}
     </main>
