@@ -1,0 +1,19 @@
+title: Discussion
+status: draft
+version: 0.1
+summary: |
+  The central question is whether a small workspace can become a practical economic engine before Solvinter Edge builds a wider node network.
+sections:
+  - heading: What would count as progress
+    body: |
+      Progress means documented work routines, repeatable task categories, improved participant skill and a clearer understanding of costs.
+  - heading: What should not be assumed
+    body: |
+      Future coastal and inland nodes should not be described as proven businesses. They are observation points until local demand is known.
+claims:
+  - The atlas should distinguish active economic engines from future nodes.
+  - Open questions should stay visible.
+questions:
+  - How should Solvinter Edge publish failures without discouraging partners?
+  - When is a second workspace justified?
+references: []

@@ -1,0 +1,19 @@
+title: AI
+status: draft
+version: 0.1
+summary: |
+  AI tools should support human work rather than replace the learning loop. Useful workflows may include research assistance, drafting, data labeling guidance, quality checks and support templates.
+sections:
+  - heading: Assisted work
+    body: |
+      AI can help with task understanding, English drafting, research synthesis and quality review, but final responsibility should stay visible.
+  - heading: Tool literacy
+    body: |
+      Training should include prompt habits, verification, privacy, tool limits and client communication.
+claims:
+  - AI-assisted work can raise output quality when paired with supervision.
+  - Verification routines are part of the product, not an afterthought.
+questions:
+  - Which AI tools are reliable enough for daily operations?
+  - How should hallucination and privacy risks be documented?
+references: []

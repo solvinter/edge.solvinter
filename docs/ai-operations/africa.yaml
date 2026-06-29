@@ -1,0 +1,19 @@
+title: Africa
+status: draft
+version: 0.1
+summary: |
+  The Accra test should be grounded in Ghanaian conditions: connectivity, heat, transport, education pathways, local income expectations and available support networks.
+sections:
+  - heading: Ghana as starting context
+    body: |
+      Cow Lane is not an abstract node. It is the first place where work rhythms, local constraints and training practices must be observed.
+  - heading: Future nodes
+    body: |
+      Cape Coast, Winneba, Apam, Black Rocks and Volta nodes should be understood as future observations until evidence exists.
+claims:
+  - Local context determines whether the operating model is repeatable.
+  - Accra should remain the first economic reference point.
+questions:
+  - Which local institutions can support training without taking ownership away from workers?
+  - Which future nodes have real demand rather than visual appeal?
+references: []

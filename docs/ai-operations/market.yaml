@@ -1,0 +1,19 @@
+title: Market
+status: draft
+version: 0.1
+summary: |
+  The first market focus is Upwork-like digital work: remote tasks, AI-assisted operations, data annotation, support, research and similar services. Revenue assumptions must remain provisional until task logs exist.
+sections:
+  - heading: Demand categories
+    body: |
+      Early demand should be tracked by task type, client profile, delivery time, pay rate, revision count and required skill level.
+  - heading: Market caution
+    body: |
+      Peripheral nodes should not be assigned revenue models until local demand is observed.
+claims:
+  - Market evidence should come from logged tasks, not pitch language.
+  - The first year goal is learning the work system as much as earning.
+questions:
+  - Which platforms or direct clients are realistic in year one?
+  - What minimum English, tool and communication skills are required?
+references: []

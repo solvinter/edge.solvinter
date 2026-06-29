@@ -1,0 +1,16 @@
+title: AI Operations
+status: draft
+version: 0.1
+summary: |
+  AI Operations describes the first Solvinter Edge economic engine: two human workstations in Cow Lane, Accra, focused on remote tasks, AI-assisted work, data annotation, support, research and similar services. The purpose is to document whether people can create repeatable income before additional physical nodes are built.
+sections:
+  - heading: Source position
+    body: |
+      The source of truth is the YAML material in docs/ai-operations. Rendered whitepapers are generated views.
+claims:
+  - Accra Node 0.1 should be treated as the first economic engine.
+  - Training should happen through practice and documented work routines.
+questions:
+  - Which task categories produce reliable learning and income?
+  - What level of supervision is required during the first year?
+references: []

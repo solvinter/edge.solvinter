@@ -1,0 +1,19 @@
+title: Ethics
+status: draft
+version: 0.1
+summary: |
+  AI Operations must avoid extracting low-paid invisible labor. The project should document pay, training, consent, task quality, supervision and worker progression.
+sections:
+  - heading: Worker dignity
+    body: |
+      Work should be structured so people learn transferable skills, not only complete isolated tasks.
+  - heading: Data and platform risk
+    body: |
+      Data handling, account ownership, client terms and platform dependency should be reviewed before scaling.
+claims:
+  - Training through practice should create skill growth.
+  - Documentation should include failures and uncomfortable tradeoffs.
+questions:
+  - Which tasks should Solvinter Edge refuse?
+  - How should people move from basic tasks to higher-skill work?
+references: []

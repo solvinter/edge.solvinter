@@ -1,0 +1,15 @@
+title: References
+status: draft
+version: 0.1
+summary: |
+  References are kept close to the source material so the rendered whitepaper remains traceable.
+references:
+  - title: Solvinter Edge repository
+    url: https://github.com/solvinter/edge.solvinter
+    note: Project source, docs and static site.
+  - title: Five-year plan
+    url: https://github.com/solvinter/edge.solvinter/blob/main/docs/finance/five-year-plan.md
+    note: Internal financial model and planning context.
+  - title: Accra Node 0.1 room concept
+    url: https://github.com/solvinter/edge.solvinter/blob/main/docs/operations/accra-node-01-room.md
+    note: Operational room and workspace concept.

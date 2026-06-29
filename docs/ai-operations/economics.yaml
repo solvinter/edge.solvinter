@@ -1,0 +1,22 @@
+title: Economics
+status: draft
+version: 0.1
+summary: |
+  The economic unit is two workstations in Accra. The first model should measure operating costs, training time, task revenue, equipment needs and repeatability.
+sections:
+  - heading: Unit economics
+    body: |
+      Track workstation uptime, paid hours, unpaid training hours, platform fees, internet cost, power cost and replacement needs.
+  - heading: Scale gate
+    body: |
+      New nodes should wait until the Accra model produces documented routines and evidence.
+claims:
+  - Two workstations are enough to test the first operating loop.
+  - Revenue quality matters more than headline revenue.
+questions:
+  - What monthly revenue level proves that the model deserves expansion?
+  - How much training time is needed before useful task delivery?
+references:
+  - title: Solvinter Edge five-year plan
+    url: https://github.com/solvinter/edge.solvinter/blob/main/docs/finance/five-year-plan.md
+    note: Internal financial planning document.

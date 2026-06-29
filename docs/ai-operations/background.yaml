@@ -1,0 +1,19 @@
+title: Background
+status: draft
+version: 0.1
+summary: |
+  The project starts from a small operational workspace rather than a large facility. The first test is whether people can use available tools, connectivity and training routines to perform paid digital work.
+sections:
+  - heading: Node 0.1
+    body: |
+      Cow Lane, Accra is the first operational workspace. It should begin with two workstations, basic scheduling, reliable connectivity and a documented task pipeline.
+  - heading: Human work first
+    body: |
+      Compute, cooling, charging and local services may become relevant later, but the immediate engine is human digital work.
+claims:
+  - A small workspace can reveal operational constraints faster than a large build.
+  - Documentation should precede replication.
+questions:
+  - Which operating hours fit local conditions and platform demand?
+  - Which equipment failures or connectivity issues appear first?
+references: []

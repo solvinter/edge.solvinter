@@ -1,0 +1,19 @@
+title: History
+status: draft
+version: 0.1
+summary: |
+  Digital labor platforms, remote support work and AI-assisted task workflows create a practical entry point for small local teams. The historical question is how these workflows can be made legible, trainable and locally owned.
+sections:
+  - heading: Remote task work
+    body: |
+      Platform work has moved from simple freelancing into mixed workflows that include data preparation, moderation, research, support and AI tool operation.
+  - heading: Local documentation
+    body: |
+      Solvinter Edge should preserve local observations instead of importing generic assumptions about digital work.
+claims:
+  - Platform work is easier to test than capital-heavy infrastructure.
+  - Local routines become valuable when they are documented.
+questions:
+  - Which historical platform patterns are useful for Accra?
+  - Which patterns create dependency or poor working conditions?
+references: []
