@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/build-whitepaper.mjs",
+    "whitepaper": "node scripts/build-whitepaper.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
