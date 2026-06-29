@@ -59,6 +59,111 @@ const systemVisuals = {
   },
 };
 
+const whitepaperCatalog = {
+  "ai-operations": {
+    title: "AI Operations",
+    href: "/whitepaper/ai-operations/",
+    source: "docs/ai-operations",
+  },
+};
+
+const nodeResearchLinks = {
+  "cow-lane": {
+    docs: ["ai-operations", "education", "ghana-nodes"],
+    whitepapers: ["ai-operations"],
+    hypothesis: "Human digital work in Cow Lane can become the first repeatable economic engine before additional nodes are built.",
+    questions: [
+      "Which task categories produce reliable income?",
+      "How much training is required before independent delivery?",
+      "Which routines should be documented before replication?",
+    ],
+  },
+  "black-rocks": {
+    docs: ["ghana-nodes", "heat-productivity", "energy"],
+    whitepapers: [],
+    hypothesis: "Black Rocks may become relevant later if cooling, charging or local learning demand appears.",
+    questions: ["Is there local demand?", "What role would justify a node here?"],
+  },
+  winneba: {
+    docs: ["education", "ghana-nodes", "ai-operations"],
+    whitepapers: ["ai-operations"],
+    hypothesis: "Winneba may become a learning node if student flows connect to documented digital work practice.",
+    questions: ["Which training formats fit?", "Is local demand present outside education?"],
+  },
+  apam: {
+    docs: ["ghana-nodes", "energy", "heat-productivity"],
+    whitepapers: [],
+    hypothesis: "Apam is a planned observation node whose role depends on local demand, charging and cooling evidence.",
+    questions: ["What should be observed first?", "Does charging or compute demand exist locally?"],
+  },
+  "cape-coast": {
+    docs: ["ghana-nodes", "education", "heat-productivity"],
+    whitepapers: [],
+    hypothesis: "Cape Coast may become a coastal reference system for learning, cooling and partnership observation.",
+    questions: ["Which partners are real?", "Which local workflows need support?"],
+  },
+  elmina: {
+    docs: ["ghana-nodes", "education"],
+    whitepapers: [],
+    hypothesis: "Elmina is an optional satellite whose value depends on documented cultural, educational and local flows.",
+    questions: ["What local demand exists?", "What should remain only observation?"],
+  },
+  kakum: {
+    docs: ["education", "ghana-nodes"],
+    whitepapers: [],
+    hypothesis: "Kakum may be useful as an inland learning reference, not as an immediate revenue node.",
+    questions: ["What learning role is practical?", "How would access and operations work?"],
+  },
+  ho: {
+    docs: ["ghana-nodes", "energy"],
+    whitepapers: [],
+    hypothesis: "Ho may later support learning or local services if demand is documented.",
+    questions: ["What work patterns exist?", "What infrastructure is missing?"],
+  },
+  hohoe: {
+    docs: ["ghana-nodes", "heat-productivity"],
+    whitepapers: [],
+    hypothesis: "Hohoe remains a Volta observation point until local demand is known.",
+    questions: ["What local demand exists?", "Could cooling or learning become relevant?"],
+  },
+  biakpa: {
+    docs: ["heat-productivity", "energy", "ghana-nodes"],
+    whitepapers: [],
+    hypothesis: "Biakpa may become relevant for climate, cooling and learning observations.",
+    questions: ["Does the mountain context change productivity?", "What energy model would be needed?"],
+  },
+  wli: {
+    docs: ["heat-productivity", "energy", "ghana-nodes"],
+    whitepapers: [],
+    hypothesis: "Wli is an optional mountain-water observation node.",
+    questions: ["What should be measured before any node is proposed?", "Is access practical?"],
+  },
+  gothenburg: {
+    docs: ["education", "distributed-compute"],
+    whitepapers: ["ai-operations"],
+    hypothesis: "Gothenburg may support coordination, partners and documentation without becoming the economic center.",
+    questions: ["Which partners are useful?", "How should Sweden support without owning the project?"],
+  },
+  umea: {
+    docs: ["heat-productivity", "education"],
+    whitepapers: [],
+    hypothesis: "Umeå may contribute northern climate, education and research perspectives.",
+    questions: ["Which research links matter?", "Is this a partner node or only reference context?"],
+  },
+  stockholm: {
+    docs: ["distributed-compute", "energy"],
+    whitepapers: [],
+    hypothesis: "Stockholm may be relevant for institutional relationships, policy and funding.",
+    questions: ["Which institutions are aligned?", "What should not be centralized?"],
+  },
+  lund: {
+    docs: ["education", "ai-operations"],
+    whitepapers: ["ai-operations"],
+    hypothesis: "Lund is an optional academic node for documentation, research and learning methods.",
+    questions: ["Which academic work is useful to Cow Lane?", "How should research return value locally?"],
+  },
+};
+
 function getNodePosition(visual, rotation, zoom) {
   const radians = ((visual.angle + rotation) * Math.PI) / 180;
   const radius = visual.radius * zoom;
@@ -297,6 +402,7 @@ export default function Page() {
   const [activeSystemId, setActiveSystemId] = useState("solvinter");
   const [selectedNodeId, setSelectedNodeId] = useState(null);
   const [activePanelId, setActivePanelId] = useState(null);
+  const [selectedResearchId, setSelectedResearchId] = useState("ai-operations");
   const [systemRotation, setSystemRotation] = useState(0);
   const [dragState, setDragState] = useState(null);
   const [zoom, setZoom] = useState(1);
@@ -306,6 +412,9 @@ export default function Page() {
   const activeVisual = systemVisuals[activeSystem.id] ?? systemVisuals.solvinter;
   const selectedNode = activeSystem.nodes.find((node) => node.id === selectedNodeId) ?? null;
   const activePanel = activePanelId ? t.panels[activePanelId] : null;
+  const selectedResearchField =
+    researchData.fields.find((field) => field.id === selectedResearchId) ?? researchData.fields[0];
+  const selectedNodeLinks = selectedNode ? nodeResearchLinks[selectedNode.id] : null;
 
   const renderedNodes = useMemo(
     () =>
@@ -348,6 +457,12 @@ export default function Page() {
   const openPanel = (panelId) => {
     setSelectedNodeId(null);
     setActivePanelId((current) => (current === panelId ? null : panelId));
+  };
+
+  const openResearchField = (fieldId) => {
+    setSelectedNodeId(null);
+    setActivePanelId("docs");
+    setSelectedResearchId(fieldId);
   };
 
   const selectNode = (nodeId) => {
@@ -605,6 +720,105 @@ export default function Page() {
               <div className="tag-row">
                 {selectedNode.facts.map((fact) => (
                   <span key={fact} className="tag">{fact}</span>
+                ))}
+              </div>
+              {selectedNodeLinks ? (
+                <>
+                  <div className="detail-panel__divider" />
+                  <div className="node-research">
+                    <p className="panel-eyebrow">Hypothesis</p>
+                    <p>{selectedNodeLinks.hypothesis}</p>
+                  </div>
+                  <div className="node-research">
+                    <p className="panel-eyebrow">Open questions</p>
+                    <ul>
+                      {selectedNodeLinks.questions.map((question) => (
+                        <li key={question}>{question}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="node-link-group">
+                    <p className="panel-eyebrow">Docs</p>
+                    <div className="node-link-grid">
+                      {selectedNodeLinks.docs.map((docId) => {
+                        const field = researchData.fields.find((item) => item.id === docId);
+
+                        return (
+                          <button key={docId} type="button" onClick={() => openResearchField(docId)}>
+                            {field?.title ?? docId}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  {selectedNodeLinks.whitepapers.length ? (
+                    <div className="node-link-group">
+                      <p className="panel-eyebrow">Whitepapers</p>
+                      <div className="node-link-grid">
+                        {selectedNodeLinks.whitepapers.map((whitepaperId) => {
+                          const whitepaper = whitepaperCatalog[whitepaperId];
+
+                          return whitepaper ? (
+                            <a key={whitepaperId} href={whitepaper.href}>
+                              {whitepaper.title}
+                            </a>
+                          ) : null;
+                        })}
+                      </div>
+                    </div>
+                  ) : null}
+                </>
+              ) : null}
+            </>
+          ) : activePanelId === "docs" ? (
+            <>
+              <p className="panel-eyebrow">Docs source material</p>
+              <h1>{selectedResearchField?.title ?? "Docs"}</h1>
+              <p>{selectedResearchField?.summary}</p>
+              <div className="research-field-list">
+                {researchData.fields.map((field) => (
+                  <button
+                    key={field.id}
+                    type="button"
+                    className={field.id === selectedResearchField?.id ? "research-field research-field--active" : "research-field"}
+                    onClick={() => setSelectedResearchId(field.id)}
+                  >
+                    {field.title}
+                  </button>
+                ))}
+              </div>
+              <div className="detail-panel__divider" />
+              <div className="yaml-part-list">
+                {selectedResearchField?.parts.length ? (
+                  selectedResearchField.parts.map((part) => (
+                    <article key={part.id} className="yaml-part">
+                      <span>{part.source}</span>
+                      <h2>{part.title}</h2>
+                      <p>{part.summary}</p>
+                      <em>{part.status} / v{part.version}</em>
+                    </article>
+                  ))
+                ) : (
+                  <p>YAML fragments have not been added for this research field yet.</p>
+                )}
+              </div>
+            </>
+          ) : activePanelId === "whitepaper" ? (
+            <>
+              <p className="panel-eyebrow">Rendered publication</p>
+              <h1>Whitepaper</h1>
+              <p>Rendered views are generated from YAML source files. The original material remains under docs.</p>
+              <div className="detail-panel__divider" />
+              <div className="yaml-part-list">
+                {Object.entries(whitepaperCatalog).map(([id, whitepaper]) => (
+                  <article key={id} className="yaml-part">
+                    <span>{whitepaper.source}</span>
+                    <h2>{whitepaper.title}</h2>
+                    <p>Generated from {whitepaper.source}.</p>
+                    <a className="detail-panel__link" href={whitepaper.href}>
+                      open rendered whitepaper
+                    </a>
+                  </article>
                 ))}
               </div>
             </>

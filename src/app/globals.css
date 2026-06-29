@@ -903,6 +903,82 @@ strong {
   background: var(--line);
 }
 
+.detail-panel__link,
+.node-link-grid a,
+.node-link-grid button,
+.research-field {
+  display: inline-flex;
+  min-height: 2rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.58rem;
+  background: rgba(0, 0, 0, 0.34);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.detail-panel__link:hover,
+.node-link-grid a:hover,
+.node-link-grid button:hover,
+.research-field:hover,
+.research-field--active {
+  border-color: rgba(241, 201, 131, 0.42);
+  color: var(--gold);
+}
+
+.node-research,
+.node-link-group,
+.yaml-part-list,
+.research-field-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.node-research ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.node-research li {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.node-link-grid,
+.research-field-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.yaml-part {
+  display: grid;
+  gap: 0.42rem;
+  border: 1px solid var(--line);
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.yaml-part span,
+.yaml-part em {
+  color: var(--faint);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.66rem;
+  font-style: normal;
+}
+
+.yaml-part h2 {
+  font-size: 1.05rem;
+}
+
+.yaml-part p {
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
