@@ -1,0 +1,51 @@
+{
+  "parts": [
+    "abstract",
+    "background",
+    "history",
+    "market",
+    "economics",
+    "ethics",
+    "africa",
+    "ai",
+    "discussion",
+    "references"
+  ],
+  "fields": [
+    {
+      "id": "ai-operations",
+      "title": "AI Operations",
+      "summary": "Human digital work, AI-assisted operations, task quality and documentation from Accra Node 0.1."
+    },
+    {
+      "id": "distributed-compute",
+      "title": "Distributed Compute",
+      "summary": "Possible future compute roles, constraints, demand signals and infrastructure requirements."
+    },
+    {
+      "id": "heat-productivity",
+      "title": "Heat & Productivity",
+      "summary": "Cooling, work capacity, thermal comfort and productivity in tropical operating conditions."
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "summary": "Training through practice, learner progression, local teaching models and documentation loops."
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "summary": "Possible health-adjacent applications, ethics, support workflows and evidence requirements."
+    },
+    {
+      "id": "energy",
+      "title": "Energy",
+      "summary": "Charging, power continuity, operating costs, resilience and future node energy needs."
+    },
+    {
+      "id": "ghana-nodes",
+      "title": "Ghana Nodes",
+      "summary": "Cow Lane, Accra and future Ghana node observations, hypotheses and open questions."
+    }
+  ]
+}
