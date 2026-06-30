@@ -185,7 +185,7 @@ const content = {
     nav: {
       whitepaper: "whitepaper",
       docs: "docs",
-      atlas: "atlas",
+      logs: "logs",
       stars: "stars",
       center: "center",
       close: "close",
@@ -216,11 +216,13 @@ const content = {
         link: "https://github.com/solvinter/edge.solvinter",
         linkLabel: "open docs",
       },
-      atlas: {
-        eyebrow: "Atlas mode",
-        title: "Solvinter-systemet",
-        body: "Atlaset är en läsbar modell över nuvarande och framtida noder. Accra är den enda aktiva ekonomiska motorn i första fasen.",
-        items: ["active node: Accra", "future nodes: observation", "local demand unknown"],
+      logs: {
+        eyebrow: "Chronological field notes",
+        title: "Logs",
+        body: "Logs är kronologiska fältanteckningar om vad som faktiskt hände innan materialet blir docs, research eller whitepapers.",
+        items: ["first year retrospective", "Cow Lane implementation", "equipment and infrastructure", "economics over time", "lessons learned"],
+        link: "https://github.com/solvinter/edge.solvinter/tree/main/docs/logs",
+        linkLabel: "open docs/logs",
       },
       stars: {
         eyebrow: "Stars",
@@ -290,7 +292,7 @@ const content = {
     nav: {
       whitepaper: "whitepaper",
       docs: "docs",
-      atlas: "atlas",
+      logs: "logs",
       stars: "stars",
       center: "center",
       close: "close",
@@ -321,11 +323,13 @@ const content = {
         link: "https://github.com/solvinter/edge.solvinter",
         linkLabel: "open docs",
       },
-      atlas: {
-        eyebrow: "Atlas mode",
-        title: "The Solvinter system",
-        body: "The atlas is a legible model of current and future nodes. Accra is the only active economic engine in the first phase.",
-        items: ["active node: Accra", "future nodes: observation", "local demand unknown"],
+      logs: {
+        eyebrow: "Chronological field notes",
+        title: "Logs",
+        body: "Logs are chronological field notes documenting what actually happened before the material becomes docs, research or whitepapers.",
+        items: ["first year retrospective", "Cow Lane implementation", "equipment and infrastructure", "economics over time", "lessons learned"],
+        link: "https://github.com/solvinter/edge.solvinter/tree/main/docs/logs",
+        linkLabel: "open docs/logs",
       },
       stars: {
         eyebrow: "Stars",
@@ -547,7 +551,7 @@ export default function Page() {
         </a>
 
         <nav className="top-orbit-nav" aria-label="Primary navigation">
-          {["whitepaper", "docs", "atlas", "stars"].map((item) => (
+          {["whitepaper", "docs", "logs", "stars"].map((item) => (
             <button
               key={item}
               type="button"
@@ -584,7 +588,7 @@ export default function Page() {
       </header>
 
       <aside className="edge-nav" aria-label="Observatory controls">
-        {["whitepaper", "docs", "atlas", "stars"].map((item) => (
+        {["whitepaper", "docs", "logs", "stars"].map((item) => (
           <button
             key={item}
             type="button"

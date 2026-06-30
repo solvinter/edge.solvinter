@@ -368,6 +368,24 @@ strong {
   transform: rotate(45deg);
 }
 
+.edge-nav__icon--logs::before,
+.edge-nav__icon--logs::after {
+  content: "";
+  position: absolute;
+  left: 0.24rem;
+  right: 0.24rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.edge-nav__icon--logs::before {
+  top: 0.34rem;
+}
+
+.edge-nav__icon--logs::after {
+  bottom: 0.34rem;
+}
+
 .edge-nav__icon--whitepaper::after {
   content: "";
   position: absolute;
