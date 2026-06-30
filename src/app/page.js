@@ -235,7 +235,6 @@ const content = {
         label: "Solvinter / Cow Lane System",
         sector: "Economic Observatory",
         headline: "Cow Lane first, future nodes later",
-        coreLabel: "Cow Lane",
         summary: "Cow Lane / Accra är aktiv nod. Black Rocks, Winneba och Apam är planerade observationsnoder.",
         nodes: [
           { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "Första operativa workspace och ekonomisk startpunkt.", status: "Cow Lane är platsen för två arbetsstationer och mänskligt digitalt arbete i första fasen.", evidence: "Dokumentera uppdrag, intäkter, träning, rutiner, utrustning, uppkoppling och öppna frågor.", facts: ["active node", "2 workstations", "human digital work", "documentation first"] },
@@ -249,7 +248,6 @@ const content = {
         label: "Cape Coast System",
         sector: "Future coastal system",
         headline: "Coastal reference and learning",
-        coreLabel: "Cape Coast",
         summary: "Cape Coast är planerad. Elmina och Kakum är optional satellites för kultur, kust och inland learning.",
         nodes: [
           { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Framtida kustreferens.", status: "Cape Coast kan bli relevant för lärande, partnerskap, svalka och kustnära observation.", evidence: "Dokumentera lokal efterfrågan, värme, uppkoppling, partnerskap och möjliga arbetsflöden.", facts: ["planned", "coastal reference", "learning later"] },
@@ -262,7 +260,6 @@ const content = {
         label: "Volta System",
         sector: "Future mountain-water system",
         headline: "Observation without Takoradi",
-        coreLabel: "Volta",
         summary: "Volta-systemet innehåller Ho, Hohoe, Biakpa och Wli. Takoradi hör inte hit.",
         nodes: [
           { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho kan senare kopplas till lärande eller lokal service, men ingen modell är bevisad.", evidence: "Dokumentera efterfrågan, uppkoppling, laddning och arbetsmönster.", facts: ["future node", "local demand unknown"] },
@@ -276,7 +273,6 @@ const content = {
         label: "Sweden / Gothenburg System",
         sector: "Northern partner system",
         headline: "Academic and partner observation",
-        coreLabel: "Gothenburg",
         summary: "Gothenburg, Umeå, Stockholm och Lund är möjliga svenska partner- och akademinoder.",
         nodes: [
           { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg kan fungera som svensk koordinations- och partnerpunkt.", evidence: "Dokumentera partnerskap, akademiska kopplingar, finansiering och stödflöden.", facts: ["partner node", "observation"] },
@@ -344,7 +340,6 @@ const content = {
         label: "Solvinter / Cow Lane System",
         sector: "Economic Observatory",
         headline: "Cow Lane first, future nodes later",
-        coreLabel: "Cow Lane",
         summary: "Cow Lane / Accra is the active node. Black Rocks, Winneba and Apam are planned observation nodes.",
         nodes: [
           { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "First operational workspace and economic starting point.", status: "Cow Lane is the place for two workstations and human digital work in the first phase.", evidence: "Document tasks, revenue, training, routines, equipment, connectivity and open questions.", facts: ["active node", "2 workstations", "human digital work", "documentation first"] },
@@ -358,7 +353,6 @@ const content = {
         label: "Cape Coast System",
         sector: "Future coastal system",
         headline: "Coastal reference and learning",
-        coreLabel: "Cape Coast",
         summary: "Cape Coast is planned. Elmina and Kakum are optional satellites for culture, coast and inland learning.",
         nodes: [
           { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Future coastal reference.", status: "Cape Coast may become relevant for learning, partnerships, cooling and coastal observation.", evidence: "Document local demand, heat, connectivity, partnerships and possible work patterns.", facts: ["planned", "coastal reference", "learning later"] },
@@ -371,7 +365,6 @@ const content = {
         label: "Volta System",
         sector: "Future mountain-water system",
         headline: "Observation without Takoradi",
-        coreLabel: "Volta",
         summary: "The Volta system contains Ho, Hohoe, Biakpa and Wli. Takoradi does not belong here.",
         nodes: [
           { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho may later connect to learning or local services, but no model is proven.", evidence: "Document demand, connectivity, charging and work patterns.", facts: ["future node", "local demand unknown"] },
@@ -385,7 +378,6 @@ const content = {
         label: "Sweden / Gothenburg System",
         sector: "Northern partner system",
         headline: "Academic and partner observation",
-        coreLabel: "Gothenburg",
         summary: "Gothenburg, Umeå, Stockholm and Lund are possible Swedish partner and academic nodes.",
         nodes: [
           { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg may serve as a Swedish coordination and partner point.", evidence: "Document partnerships, academic links, funding and support flows.", facts: ["partner node", "observation"] },
@@ -629,9 +621,9 @@ export default function Page() {
             <span className="orbit orbit--three" />
             <span className="orbit orbit--four" />
             <span className={`system-core system-core--${activeVisual.tone}`}>
-              <span className="system-core__sun" />
+              <span className="system-core__sphere" />
               <span className="system-core__ring" />
-              <span className="system-core__word">{activeSystem.coreLabel}</span>
+              <span className="system-core__word">SOLVINTER</span>
             </span>
           </div>
 
