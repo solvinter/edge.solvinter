@@ -1,5 +1,5 @@
 export const researchData = {
-  "generatedAt": "2026-06-29T12:08:39.368Z",
+  "generatedAt": "2026-06-30T03:57:51.215Z",
   "parts": [
     "abstract",
     "background",
@@ -7,6 +7,8 @@ export const researchData = {
     "market",
     "economics",
     "ethics",
+    "aesthetics",
+    "ergonomics",
     "africa",
     "ai",
     "discussion",
@@ -297,9 +299,21 @@ export const researchData = {
       "parts": []
     },
     {
-      "id": "heat-productivity",
-      "title": "Heat & Productivity",
-      "summary": "Cooling, work capacity, thermal comfort and productivity in tropical operating conditions.",
+      "id": "ergonomics",
+      "title": "Ergonomics / Arbetsmiljö",
+      "summary": "Air, light, sound, temperature, tools, rest and bodily conditions for human work.",
+      "parts": []
+    },
+    {
+      "id": "ethics",
+      "title": "Ethics",
+      "summary": "Human dignity, fair work, non-exploitation and the purpose of technology.",
+      "parts": []
+    },
+    {
+      "id": "aesthetics",
+      "title": "Aesthetics",
+      "summary": "Beauty, form, atmosphere and the visible expression of ethical design.",
       "parts": []
     },
     {

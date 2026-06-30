@@ -6,6 +6,8 @@
     "market",
     "economics",
     "ethics",
+    "aesthetics",
+    "ergonomics",
     "africa",
     "ai",
     "discussion",
@@ -23,9 +25,19 @@
       "summary": "Possible future compute roles, constraints, demand signals and infrastructure requirements."
     },
     {
-      "id": "heat-productivity",
-      "title": "Heat & Productivity",
-      "summary": "Cooling, work capacity, thermal comfort and productivity in tropical operating conditions."
+      "id": "ergonomics",
+      "title": "Ergonomics / Arbetsmiljö",
+      "summary": "Air, light, sound, temperature, tools, rest and bodily conditions for human work."
+    },
+    {
+      "id": "ethics",
+      "title": "Ethics",
+      "summary": "Human dignity, fair work, non-exploitation and the purpose of technology."
+    },
+    {
+      "id": "aesthetics",
+      "title": "Aesthetics",
+      "summary": "Beauty, form, atmosphere and the visible expression of ethical design."
     },
     {
       "id": "education",
