@@ -874,6 +874,81 @@ strong {
   line-height: 1.5;
 }
 
+.document-page {
+  min-height: 100svh;
+  padding: 4rem clamp(1rem, 5vw, 5rem) 5rem;
+  background:
+    radial-gradient(circle at 72% 16%, rgba(134, 183, 214, 0.07), transparent 22rem),
+    radial-gradient(circle at 28% 34%, rgba(241, 201, 131, 0.06), transparent 18rem),
+    #000;
+}
+
+.document-page__header {
+  width: min(100%, 760px);
+  margin-bottom: 3rem;
+}
+
+.document-page__back,
+.document-link {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 2.4rem;
+  align-items: center;
+  border: 1px solid rgba(245, 239, 227, 0.14);
+  padding: 0.48rem 0.72rem;
+  color: var(--gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.76rem;
+}
+
+.document-page__header h1 {
+  margin: 1.5rem 0 1rem;
+  font-size: clamp(2.6rem, 8vw, 5.8rem);
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1px;
+  border: 1px solid rgba(245, 239, 227, 0.12);
+}
+
+.document-card {
+  min-height: 18rem;
+  padding: 1.4rem;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.document-card--featured {
+  border-color: rgba(241, 201, 131, 0.32);
+  box-shadow: inset 0 0 0 1px rgba(241, 201, 131, 0.22);
+}
+
+.document-card h2 {
+  margin: 0.7rem 0 0.8rem;
+  color: var(--ink);
+  font-size: 1.6rem;
+}
+
+.document-card__parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+}
+
+.document-card__parts span {
+  border: 1px solid rgba(245, 239, 227, 0.12);
+  padding: 0.35rem 0.5rem;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+}
+
+.document-link {
+  margin-top: 1.4rem;
+}
+
 .detail-panel {
   position: absolute;
   top: 8.6rem;
