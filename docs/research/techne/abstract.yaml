@@ -1,0 +1,35 @@
+title: Techné
+
+status: draft
+version: 0.1
+
+summary: >
+  Techné is understood as the practical art of bringing knowledge into the
+  world. Engineering is one expression of techné, but techné also includes
+  craftsmanship, architecture, material knowledge, repair, maintenance and the
+  continuous dialogue between humans, technology and nature.
+
+sections:
+  - title: Solvinter perspective
+    body: >
+      Solvinter understands engineering as part of techné rather than its
+      entirety. A technology is successful not merely because it performs well
+      under laboratory conditions, but because it can be understood, repaired,
+      maintained and integrated into the lives of the people who depend on it.
+      The goal is durable technology that remains useful across decades rather
+      than disposable products optimized for replacement.
+
+claims:
+  - Engineering is a subset of techné.
+  - Durable technology creates resilience.
+  - Repairability is a design principle.
+  - Local maintenance is part of system architecture.
+  - Materials should be chosen for longevity rather than novelty.
+
+questions:
+  - Which materials survive decades on the Ghanaian coast?
+  - Which technologies can be repaired using locally available tools?
+  - How can infrastructure become understandable rather than opaque?
+  - What should remain deliberately simple?
+
+references: []

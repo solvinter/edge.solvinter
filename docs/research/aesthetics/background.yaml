@@ -1,0 +1,32 @@
+title: Background
+
+status: draft
+version: 0.1
+
+abstract: >
+  Aesthetics has traditionally been concerned with beauty, perception and the
+  philosophy of art. During the twentieth century the field expanded to include
+  architecture, industrial design, human-computer interaction and the
+  experience of everyday environments. As digital work becomes an increasingly
+  important part of human life, aesthetics also becomes a question of how
+  technological environments influence attention, creativity, well-being and
+  the quality of the work produced.
+
+sections:
+  - title: Historical context
+    body: >
+      From Plato and Aristotle to Kant, Dewey and contemporary design theory,
+      aesthetics has examined how humans experience the world through the
+      senses. Modern research increasingly recognizes that perception is not
+      separate from action: the environments we inhabit shape how we think,
+      learn and collaborate.
+
+  - title: Contemporary relevance
+    body: >
+      Much of today's digital work takes place in environments that were not
+      intentionally designed for sustained attention or human flourishing.
+      Advances in architecture, environmental psychology, cognitive science and
+      design suggest that aesthetic qualities are not merely decorative but
+      contribute to the conditions under which knowledge is created.
+
+references: []

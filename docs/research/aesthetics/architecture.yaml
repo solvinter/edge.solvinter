@@ -1,0 +1,33 @@
+title: Architecture
+
+status: draft
+version: 0.1
+
+abstract: >
+  In Solvinter, architecture is understood as the spatial expression of
+  aesthetics. Buildings and workspaces are not passive containers for human
+  activity but active participants in learning, creativity and collaboration.
+  Architecture shapes attention, emotion and the quality of the work produced.
+
+sections:
+  - title: Solvinter perspective
+    body: >
+      The design of space influences how people experience technology and one
+      another. Proportion, light, materials, views, movement and silence become
+      part of the creative process. Good architecture should invite calm,
+      concentration and curiosity while remaining visually quiet.
+
+claims:
+  - Architecture is lived aesthetics.
+  - Space influences perception.
+  - Light and proportion shape experience.
+  - Buildings become part of the creative process.
+  - Good architecture supports attention without demanding it.
+
+questions:
+  - Which architectural qualities support deep work?
+  - How should architecture respond to climate and culture?
+  - Can architecture improve collaboration and learning?
+  - How can small workspaces feel generous and calm?
+
+references: []
