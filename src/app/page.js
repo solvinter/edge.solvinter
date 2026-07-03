@@ -830,7 +830,7 @@ export default function Page() {
                     <a
                       key={item}
                       className="tag"
-                      href="https://github.com/solvinter/edge.solvinter/blob/main/docs/logs/2025/retrospective-first-year.md"
+                      href="/docs/logs/2025/retrospective-first-year"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -854,7 +854,7 @@ export default function Page() {
     <a
       key={item}
       className="tag"
-      href="https://github.com/solvinter/edge.solvinter/blob/main/docs/logs/2025/retrospective-first-year.md"
+      href="/docs/logs/2025/retrospective-first-year"
       target="_blank"
       rel="noopener noreferrer"
     >
