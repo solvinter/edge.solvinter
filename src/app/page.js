@@ -835,7 +835,23 @@ export default function Page() {
                 </a>
               ) : null}
             </>
-          )}
+          )}{activePanel.items.map((item) =>
+  item === "first year retrospective" ? (
+    <a
+      key={item}
+      className="tag"
+      href="https://github.com/solvinter/edge.solvinter/blob/main/docs/logs/2025/retrospective-first-year.md"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {item}
+    </a>
+  ) : (
+    <span key={item} className="tag">
+      {item}
+    </span>
+  )
+)}
         </aside>
       )}
     </main>
