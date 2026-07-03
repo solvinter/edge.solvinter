@@ -825,9 +825,23 @@ export default function Page() {
               <p>{activePanel.body}</p>
               <div className="detail-panel__divider" />
               <div className="tag-row">
-                {activePanel.items.map((item) => (
-                  <span key={item} className="tag">{item}</span>
-                ))}
+                {activePanel.items.map((item) =>
+                  item === "first year retrospective" ? (
+                    <a
+                      key={item}
+                      className="tag"
+                      href="https://github.com/solvinter/edge.solvinter/blob/main/docs/logs/2025/retrospective-first-year.md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item}
+                    </a>
+                  ) : (
+                    <span key={item} className="tag">
+                      {item}
+                    </span>
+                  )
+                )}
               </div>
               {activePanel.link ? (
                 <a className="detail-panel__link" href={activePanel.link}>
