@@ -95,3 +95,56 @@ During installation:
 - update system immediately after first boot
 
 
+
+## First Update
+
+Immediately after installation, update the operating system before installing GPU drivers or additional software.
+
+```bash
+sudo dnf upgrade --refresh
+sudo reboot
+Keeping the operating system fully updated before installing drivers reduces compatibility problems and ensures the latest kernel, firmware and security fixes are available.
+
+
+## First Update
+
+Immediately after installation, update the operating system before installing GPU drivers or additional software.
+
+```bash
+sudo dnf upgrade --refresh
+sudo reboot
+```
+
+Keeping the operating system fully updated before installing drivers reduces compatibility problems and ensures the latest kernel, firmware and security fixes are available.
+
+
+## Headless Operation
+
+The first objective after installing Fedora is to make the workstation accessible remotely.
+
+Once remote administration is verified, the monitor, keyboard and mouse are no longer required.
+
+### Install OpenSSH
+
+```bash
+sudo dnf install openssh-server
+sudo systemctl enable --now sshd
+systemctl status sshd --no-pager
+```
+
+Verify that another computer on the local network can connect successfully before continuing.
+
+
+## Tailscale
+
+After SSH has been verified on the local network, install Tailscale to enable secure remote administration over the Internet.
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo systemctl enable --now tailscaled
+sudo tailscale up
+tailscale status
+```
+
+Verify that the node appears in the Tailscale network before continuing.
+
