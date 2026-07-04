@@ -22,6 +22,7 @@ export default function BlackRocksPage() {
         <a href="/nodes/black-rocks/architecture">Architecture</a>
         <br />
         <a href="/nodes/black-rocks/timeline">Timeline</a>
+    <a href="/nodes/black-rocks/atelier">Atelier</a>
       </nav>
     </main>
   );
