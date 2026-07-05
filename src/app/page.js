@@ -855,6 +855,9 @@ export default function Page() {
       key={item}
       className="tag"
       href="/docs/logs/2025/retrospective-first-year"
+             <Link href="/nodes/black-rocks/atelier">
+  <AtelierBuilding />
+</Link>
       target="_blank"
       rel="noopener noreferrer"
     >
