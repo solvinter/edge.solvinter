@@ -239,10 +239,10 @@ const content = {
         headline: "Cow Lane first, future nodes later",
         summary: "Cow Lane / Accra är aktiv nod. Black Rocks, Winneba och Apam är planerade observationsnoder.",
         nodes: [
-          { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "Första operativa workspace och ekonomisk startpunkt.", status: "Cow Lane är platsen för två arbetsstationer och mänskligt digitalt arbete i första fasen.", evidence: "Dokumentera uppdrag, intäkter, träning, rutiner, utrustning, uppkoppling och öppna frågor.", facts: ["active node", "2 workstations", "human digital work", "documentation first"] },
-          { id: "black-rocks", role: "future", name: "Black Rocks", code: "planned", state: "planned node", phase: "Observation. Lokal efterfrågan är okänd.", status: "Black Rocks är planerad som möjlig framtida nod, inte som bevisad intäktsmodell.", evidence: "Följ lokal efterfrågan, svalka, laddning och möjliga lärandeflöden.", facts: ["planned", "observation", "local demand unknown"] },
-          { id: "winneba", role: "future", name: "Winneba", code: "planned", state: "planned node", phase: "Observation och lärande.", status: "Winneba kan senare kopplas till utbildning och studentflöden, men ekonomin startar inte här.", evidence: "Mät lärandebehov, uppkoppling, laddning och lokala arbetsmönster.", facts: ["planned", "learning", "observation"] },
-          { id: "apam", role: "future", name: "Apam", code: "planned", state: "planned node", phase: "Observation. Lokal efterfrågan är okänd.", status: "Apam är en planerad framtida nod som kräver observation innan roll eller ekonomi antas.", evidence: "Möjliga roller senare: laddning, svalka, compute och lokal service.", facts: ["planned", "observation", "charging later"] },
+          { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "Första operativa workspace och ekonomisk startpunkt.", status: "Cow [...]
+          { id: "black-rocks", role: "future", name: "Black Rocks", code: "planned", state: "planned node", phase: "Observation. Lokal efterfrågan är okänd.", status: "Black Rocks är planerad[...]
+          { id: "winneba", role: "future", name: "Winneba", code: "planned", state: "planned node", phase: "Observation och lärande.", status: "Winneba kan senare kopplas till utbildning och stu[...]
+          { id: "apam", role: "future", name: "Apam", code: "planned", state: "planned node", phase: "Observation. Lokal efterfrågan är okänd.", status: "Apam är en planerad framtida nod som [...]
         ],
       },
       {
@@ -252,9 +252,9 @@ const content = {
         headline: "Coastal reference and learning",
         summary: "Cape Coast är planerad. Elmina och Kakum är optional satellites för kultur, kust och inland learning.",
         nodes: [
-          { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Framtida kustreferens.", status: "Cape Coast kan bli relevant för lärande, partnerskap, svalka och kustnära observation.", evidence: "Dokumentera lokal efterfrågan, värme, uppkoppling, partnerskap och möjliga arbetsflöden.", facts: ["planned", "coastal reference", "learning later"] },
-          { id: "elmina", role: "future", name: "Elmina", code: "optional satellite", state: "optional satellite", phase: "Observation.", status: "Elmina är en optional satellite nära Cape Coast-systemet.", evidence: "Observera lokala flöden, kultur, utbildning och möjliga partnerskap.", facts: ["optional", "observation"] },
-          { id: "kakum", role: "future", name: "Kakum / inland learning node", code: "optional satellite", state: "optional satellite", phase: "Inland learning observation.", status: "Kakum kan läsas som inland learning node, inte som aktiv ekonomisk motor.", evidence: "Mät utbildningsvärde, lokala behov och praktisk åtkomst.", facts: ["optional", "learning", "inland"] },
+          { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Framtida kustreferens.", status: "Cape Coast kan bli relevant för lärande, part[...]
+          { id: "elmina", role: "future", name: "Elmina", code: "optional satellite", state: "optional satellite", phase: "Observation.", status: "Elmina är en optional satellite nära Cape Coas[...]
+          { id: "kakum", role: "future", name: "Kakum / inland learning node", code: "optional satellite", state: "optional satellite", phase: "Inland learning observation.", status: "Kakum kan l[...]
         ],
       },
       {
@@ -264,10 +264,10 @@ const content = {
         headline: "Observation without Takoradi",
         summary: "Volta-systemet innehåller Ho, Hohoe, Biakpa och Wli. Takoradi hör inte hit.",
         nodes: [
-          { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho kan senare kopplas till lärande eller lokal service, men ingen modell är bevisad.", evidence: "Dokumentera efterfrågan, uppkoppling, laddning och arbetsmönster.", facts: ["future node", "local demand unknown"] },
-          { id: "hohoe", role: "future", name: "Hohoe", code: "planned", state: "future node", phase: "Observation.", status: "Hohoe är en framtida observationspunkt i Volta-systemet.", evidence: "Mät lokala behov innan någon roll definieras.", facts: ["future node", "observation"] },
-          { id: "biakpa", role: "future", name: "Biakpa", code: "planned", state: "future node", phase: "Mountain observation.", status: "Biakpa kan vara relevant för miljö, svalka och lärande senare.", evidence: "Observera klimat, åtkomst, energi och lokala behov.", facts: ["future node", "cooling later"] },
-          { id: "wli", role: "future", name: "Wli / mountain-water node", code: "optional", state: "optional satellite", phase: "Mountain-water observation.", status: "Wli är optional och ska bara läsas som möjlig framtida observation.", evidence: "Dokumentera vatten, klimat, åtkomst och lokala frågor innan roll antas.", facts: ["optional", "observation"] },
+          { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho kan senare kopplas till lärande eller lokal service, men ingen modell [...]
+          { id: "hohoe", role: "future", name: "Hohoe", code: "planned", state: "future node", phase: "Observation.", status: "Hohoe är en framtida observationspunkt i Volta-systemet.", evidence[...]
+          { id: "biakpa", role: "future", name: "Biakpa", code: "planned", state: "future node", phase: "Mountain observation.", status: "Biakpa kan vara relevant för miljö, svalka och lärande[...]
+          { id: "wli", role: "future", name: "Wli / mountain-water node", code: "optional", state: "optional satellite", phase: "Mountain-water observation.", status: "Wli är optional och ska ba[...]
         ],
       },
       {
@@ -277,10 +277,10 @@ const content = {
         headline: "Academic and partner observation",
         summary: "Gothenburg, Umeå, Stockholm och Lund är möjliga svenska partner- och akademinoder.",
         nodes: [
-          { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg kan fungera som svensk koordinations- och partnerpunkt.", evidence: "Dokumentera partnerskap, akademiska kopplingar, finansiering och stödflöden.", facts: ["partner node", "observation"] },
-          { id: "umea", role: "future", name: "Umeå", code: "planned", state: "future node", phase: "Northern observation.", status: "Umeå är en möjlig framtida svensk nod för kunskap och partnerskap.", evidence: "Mät relevans för utbildning, klimatkunskap och forskning.", facts: ["future node", "research"] },
-          { id: "stockholm", role: "future", name: "Stockholm", code: "planned", state: "future node", phase: "Institutional observation.", status: "Stockholm kan vara relevant för institutionella relationer och finansiering.", evidence: "Observera partners, finansiering och policykopplingar.", facts: ["future node", "partners"] },
-          { id: "lund", role: "future", name: "Lund / academic node", code: "optional", state: "optional academic node", phase: "Academic observation.", status: "Lund är optional och kopplas främst till akademisk kunskap och dokumentation.", evidence: "Dokumentera akademiska samarbeten och forskningsfrågor.", facts: ["optional", "academic"] },
+          { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg kan fungera som svens[...]
+          { id: "umea", role: "future", name: "Umeå", code: "planned", state: "future node", phase: "Northern observation.", status: "Umeå är en möjlig framtida svensk nod för kunskap och pa[...]
+          { id: "stockholm", role: "future", name: "Stockholm", code: "planned", state: "future node", phase: "Institutional observation.", status: "Stockholm kan vara relevant för institutionel[...]
+          { id: "lund", role: "future", name: "Lund / academic node", code: "optional", state: "optional academic node", phase: "Academic observation.", status: "Lund är optional och kopplas fr…[...]
         ],
       },
     ],  },
@@ -346,10 +346,10 @@ const content = {
         headline: "Cow Lane first, future nodes later",
         summary: "Cow Lane / Accra is the active node. Black Rocks, Winneba and Apam are planned observation nodes.",
         nodes: [
-          { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "First operational workspace and economic starting point.", status: "Cow Lane is the place for two workstations and human digital work in the first phase.", evidence: "Document tasks, revenue, training, routines, equipment, connectivity and open questions.", facts: ["active node", "2 workstations", "human digital work", "documentation first"] },
-          { id: "black-rocks", role: "future", name: "Black Rocks", code: "planned", state: "planned node", phase: "Observation. Local demand is unknown.", status: "Black Rocks is planned as a possible future node, not as a proven revenue model.", evidence: "Track local demand, cooling, charging and possible learning flows.", facts: ["planned", "observation", "local demand unknown"] },
-          { id: "winneba", role: "future", name: "Winneba", code: "planned", state: "planned node", phase: "Observation and learning.", status: "Winneba may later connect to education and student flows, but the economy does not start here.", evidence: "Measure learning needs, connectivity, charging and local work patterns.", facts: ["planned", "learning", "observation"] },
-          { id: "apam", role: "future", name: "Apam", code: "planned", state: "planned node", phase: "Observation. Local demand is unknown.", status: "Apam is a planned future node that requires observation before any role or economics are assumed.", evidence: "Possible later roles: charging, cooling, compute and local service.", facts: ["planned", "observation", "charging later"] },
+          { id: "cow-lane", role: "primary", name: "Cow Lane / Accra", code: "active node", state: "economic engine", phase: "First operational workspace and economic starting point.", status: "C[...]
+          { id: "black-rocks", role: "future", name: "Black Rocks", code: "planned", state: "planned node", phase: "Observation. Local demand is unknown.", status: "Black Rocks is planned as a po[...]
+          { id: "winneba", role: "future", name: "Winneba", code: "planned", state: "planned node", phase: "Observation and learning.", status: "Winneba may later connect to education and student[...]
+          { id: "apam", role: "future", name: "Apam", code: "planned", state: "planned node", phase: "Observation. Local demand is unknown.", status: "Apam is a planned future node that requires [...]
         ],
       },
       {
@@ -359,9 +359,9 @@ const content = {
         headline: "Coastal reference and learning",
         summary: "Cape Coast is planned. Elmina and Kakum are optional satellites for culture, coast and inland learning.",
         nodes: [
-          { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Future coastal reference.", status: "Cape Coast may become relevant for learning, partnerships, cooling and coastal observation.", evidence: "Document local demand, heat, connectivity, partnerships and possible work patterns.", facts: ["planned", "coastal reference", "learning later"] },
-          { id: "elmina", role: "future", name: "Elmina", code: "optional satellite", state: "optional satellite", phase: "Observation.", status: "Elmina is an optional satellite near the Cape Coast system.", evidence: "Observe local flows, culture, education and possible partnerships.", facts: ["optional", "observation"] },
-          { id: "kakum", role: "future", name: "Kakum / inland learning node", code: "optional satellite", state: "optional satellite", phase: "Inland learning observation.", status: "Kakum can be read as an inland learning node, not as an active economic engine.", evidence: "Measure educational value, local needs and practical access.", facts: ["optional", "learning", "inland"] },
+          { id: "cape-coast", role: "future", name: "Cape Coast", code: "planned", state: "planned node", phase: "Future coastal reference.", status: "Cape Coast may become relevant for learning,[...]
+          { id: "elmina", role: "future", name: "Elmina", code: "optional satellite", state: "optional satellite", phase: "Observation.", status: "Elmina is an optional satellite near the Cape Co[...]
+          { id: "kakum", role: "future", name: "Kakum / inland learning node", code: "optional satellite", state: "optional satellite", phase: "Inland learning observation.", status: "Kakum can b[...]
         ],
       },
       {
@@ -371,10 +371,10 @@ const content = {
         headline: "Observation without Takoradi",
         summary: "The Volta system contains Ho, Hohoe, Biakpa and Wli. Takoradi does not belong here.",
         nodes: [
-          { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho may later connect to learning or local services, but no model is proven.", evidence: "Document demand, connectivity, charging and work patterns.", facts: ["future node", "local demand unknown"] },
-          { id: "hohoe", role: "future", name: "Hohoe", code: "planned", state: "future node", phase: "Observation.", status: "Hohoe is a future observation point in the Volta system.", evidence: "Measure local needs before defining any role.", facts: ["future node", "observation"] },
-          { id: "biakpa", role: "future", name: "Biakpa", code: "planned", state: "future node", phase: "Mountain observation.", status: "Biakpa may later become relevant for environment, cooling and learning.", evidence: "Observe climate, access, energy and local needs.", facts: ["future node", "cooling later"] },
-          { id: "wli", role: "future", name: "Wli / mountain-water node", code: "optional", state: "optional satellite", phase: "Mountain-water observation.", status: "Wli is optional and should only be read as possible future observation.", evidence: "Document water, climate, access and local questions before assuming any role.", facts: ["optional", "observation"] },
+          { id: "ho", role: "future", name: "Ho", code: "planned", state: "future node", phase: "Observation.", status: "Ho may later connect to learning or local services, but no model is proven[...]
+          { id: "hohoe", role: "future", name: "Hohoe", code: "planned", state: "future node", phase: "Observation.", status: "Hohoe is a future observation point in the Volta system.", evidence:[...]
+          { id: "biakpa", role: "future", name: "Biakpa", code: "planned", state: "future node", phase: "Mountain observation.", status: "Biakpa may later become relevant for environment, cooling[...]
+          { id: "wli", role: "future", name: "Wli / mountain-water node", code: "optional", state: "optional satellite", phase: "Mountain-water observation.", status: "Wli is optional and should [...]
         ],
       },
       {
@@ -384,10 +384,10 @@ const content = {
         headline: "Academic and partner observation",
         summary: "Gothenburg, Umeå, Stockholm and Lund are possible Swedish partner and academic nodes.",
         nodes: [
-          { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg may serve as a Swedish coordination and partner point.", evidence: "Document partnerships, academic links, funding and support flows.", facts: ["partner node", "observation"] },
-          { id: "umea", role: "future", name: "Umeå", code: "planned", state: "future node", phase: "Northern observation.", status: "Umeå is a possible future Swedish node for knowledge and partnerships.", evidence: "Measure relevance for education, climate knowledge and research.", facts: ["future node", "research"] },
-          { id: "stockholm", role: "future", name: "Stockholm", code: "planned", state: "future node", phase: "Institutional observation.", status: "Stockholm may become relevant for institutional relationships and funding.", evidence: "Observe partners, funding and policy links.", facts: ["future node", "partners"] },
-          { id: "lund", role: "future", name: "Lund / academic node", code: "optional", state: "optional academic node", phase: "Academic observation.", status: "Lund is optional and mainly connected to academic knowledge and documentation.", evidence: "Document academic collaborations and research questions.", facts: ["optional", "academic"] },
+          { id: "gothenburg", role: "future", name: "Gothenburg", code: "planned", state: "partner node", phase: "Partner and coordination observation.", status: "Gothenburg may serve as a Swedis[...]
+          { id: "umea", role: "future", name: "Umeå", code: "planned", state: "future node", phase: "Northern observation.", status: "Umeå is a possible future Swedish node for knowledge and pa[...]
+          { id: "stockholm", role: "future", name: "Stockholm", code: "planned", state: "future node", phase: "Institutional observation.", status: "Stockholm may become relevant for institutiona[...]
+          { id: "lund", role: "future", name: "Lund / academic node", code: "optional", state: "optional academic node", phase: "Academic observation.", status: "Lund is optional and mainly conne[...]
         ],
       },
     ],  },
@@ -849,26 +849,7 @@ export default function Page() {
                 </a>
               ) : null}
             </>
-          )}{activePanel.items.map((item) =>
-  item === "first year retrospective" ? (
-    <a
-      key={item}
-      className="tag"
-      href="/docs/logs/2025/retrospective-first-year"
-             <Link href="/nodes/black-rocks/atelier">
-  <AtelierBuilding />
-</Link>
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {item}
-    </a>
-  ) : (
-    <span key={item} className="tag">
-      {item}
-    </span>
-  )
-)}
+          )}
         </aside>
       )}
     </main>
