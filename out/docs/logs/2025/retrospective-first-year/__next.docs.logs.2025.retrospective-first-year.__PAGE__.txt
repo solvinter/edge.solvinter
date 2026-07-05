@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"document-page","children":[["$","a",null,{"href":"/","children":"← Solvinter Edge"}],["$","article",null,{"children":[["$","p",null,{"className":"panel-eyebrow","children":"Status: draft"}],["$","h1",null,{"children":"First Year Retrospective"}],["$","h2",null,{"children":"The beginning"}],["$","p",null,{"children":"About a year ago I found myself with an unusual amount of uninterrupted time. With little more than a computer and internet access, I began exploring ideas that had followed me for years."}],["$","p",null,{"children":"Solvinter did not begin as an AI company or a startup. It began with a simple question: Can sunlight become human capability?"}]]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EJJMEpSdmJMGx4rRnZTre"}
+4:null

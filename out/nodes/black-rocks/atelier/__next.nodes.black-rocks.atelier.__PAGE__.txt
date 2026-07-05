@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+:HL["/images/atelier/EIXR4459.JPG","image"]
+:HL["/images/atelier/MZWZ3036.JPG","image"]
+:HL["/images/atelier/PLDF3567.JPG","image"]
+:HL["/images/atelier/WMSA0536.JPG","image"]
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-black text-white px-6 py-12","children":["$","section",null,{"className":"mx-auto max-w-5xl space-y-8","children":[["$","div",null,{"children":[["$","p",null,{"className":"text-sm uppercase tracking-[0.3em] text-white/50","children":"Black Rocks"}],["$","h1",null,{"className":"mt-3 text-4xl font-semibold","children":"Atelier"}],["$","p",null,{"className":"mt-4 max-w-2xl text-white/70","children":"Atelier är en separat byggnad på Black Rocks — en plats för arbete, bilder, material, skisser och långsam produktion."}]]}],["$","div",null,{"className":"grid gap-4 md:grid-cols-2","children":[["$","img","/images/atelier/EIXR4459.JPG",{"src":"/images/atelier/EIXR4459.JPG","alt":"Atelier at Black Rocks","className":"aspect-[4/3] w-full rounded-2xl object-cover"}],["$","img","/images/atelier/MZWZ3036.JPG",{"src":"/images/atelier/MZWZ3036.JPG","alt":"Atelier at Black Rocks","className":"aspect-[4/3] w-full rounded-2xl object-cover"}],["$","img","/images/atelier/PLDF3567.JPG",{"src":"/images/atelier/PLDF3567.JPG","alt":"Atelier at Black Rocks","className":"aspect-[4/3] w-full rounded-2xl object-cover"}],["$","img","/images/atelier/WMSA0536.JPG",{"src":"/images/atelier/WMSA0536.JPG","alt":"Atelier at Black Rocks","className":"aspect-[4/3] w-full rounded-2xl object-cover"}]]}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EJJMEpSdmJMGx4rRnZTre"}
+4:null

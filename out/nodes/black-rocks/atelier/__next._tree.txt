@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/0v8x02n0hc2ja.css","style"]
+:HL["/images/atelier/EIXR4459.JPG","image"]
+:HL["/images/atelier/MZWZ3036.JPG","image"]
+:HL["/images/atelier/PLDF3567.JPG","image"]
+:HL["/images/atelier/WMSA0536.JPG","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"nodes","param":null,"prefetchHints":0,"slots":{"children":{"name":"black-rocks","param":null,"prefetchHints":0,"slots":{"children":{"name":"atelier","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"EJJMEpSdmJMGx4rRnZTre"}
