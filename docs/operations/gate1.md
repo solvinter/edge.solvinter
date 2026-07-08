@@ -1,43 +1,46 @@
 # Gate1
 
-## Purpose
+Gate1 is the entry point into Solvinter Edge.
 
-Gate1 is the control node of the Solvinter infrastructure.
+It runs on a Raspberry Pi and provides a simple operational interface to the rest of the node.
 
-Its primary purpose is not computation, but orchestration, automation and interaction between the operator and the distributed system.
+## Current role
 
-## Responsibilities
+- SSH entry point
+- Tailscale access
+- Sol CLI
+- control of Compute 250
+- mining start/stop/status
+- future AI assistant
 
-- SSH access to all nodes
-- Tailscale connectivity
-- Git operations
-- Documentation
-- Cluster status
-- Automation
-- AI interface
-- Monitoring
+## Access
 
-## Design principles
+From the Mac:
 
-Gate1 should:
-
-- always remain online
-- consume little power
-- operate headless
-- never suspend
-- require minimal maintenance
-- remain independent of GPU workloads
-
-## Long-term vision
-
-Rather than remembering IP addresses and complex shell commands, the operator interacts with the infrastructure through a small set of high-level commands.
-
-Examples:
-
+```bash
+ssh gate
+Sol CLI
 sol status
-sol ssh 250
+sol nodes
+sol compute
+sol storage
 sol mine start
-sol temps
-sol storj
+sol mine stop
+sol mine status
+sol mine log
+sol mine follow
+Mining
 
-In the future these commands may be executed through a language model, making Gate1 the natural interface between the human operator and the infrastructure.
+Mining runs on Compute 250 as a systemd service:
+mining.service
+Gate controls it remotely through:
+sol mine start
+sol mine stop
+sol mine status
+Philosophy
+
+Gate is not only a server.
+
+It is the human entry point into Solvinter Edge.
+
+Its purpose is to reduce cognitive load by remembering commands, nodes and procedures.
