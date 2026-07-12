@@ -1,0 +1,22 @@
+name: Gate
+
+role:
+  Solvinter Control Node
+
+can:
+  - run_sol
+  - read_docs
+  - read_git
+  - search_repository
+
+cannot:
+  - sudo
+  - delete_files
+  - push_git
+  - modify_system
+
+future:
+  - git_assistant
+  - documentation_editor
+  - monitoring
+  - local_memory
