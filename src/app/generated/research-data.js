@@ -1,5 +1,5 @@
 export const researchData = {
-  "generatedAt": "2026-07-05T14:21:05.343Z",
+  "generatedAt": "2026-07-13T16:34:55.099Z",
   "parts": [
     "abstract",
     "background",
